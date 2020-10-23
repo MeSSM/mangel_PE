@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Details</title>
+  <style>
+    @charset "UTF-8";
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.42em;
+      color:#A7A1AE;
+      background-color:#1F2739;
+    }
+    div {
+      display: inline-block;
+      text-align: center;
+    }
+    h3 {
+      color: #FB667A;
+      background-color: rgba(236, 232, 225, 0.2);
+      box-shadow: 0 2px 2px -2px #0E1119;
+      padding:10px 0;
+    }
+    p {
+      text-align: justify;
+      background-color: rgba(236, 232, 225, 0.2);
+      box-shadow: 0 2px 2px -2px #0E1119;
+      padding:10px 0;
+    }
+    h4{
+      color: #FB667A;
+      background-color: rgba(236, 232, 225, 0.2);
+      box-shadow: 0 2px 2px -2px #0E1119;
+      padding:10px 0;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <h3>{{request.request}}</h3>
+        <h5>{{request.date.day}}/{{request.date.month}}/{{request.date.year}}</h5>
+        <p>{{request.description}}</p>
+        <h4>{{request.price}} points</h4>
+    </div>
+</body>
+</html>

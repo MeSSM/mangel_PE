@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <title>My Angel</title>
+  </head>
+    <body>
+
+      <div>
+        <h2>WELCOME BABY</h2>
+        <a href="{% url 'login' %}"><p><span class="bg"></span><span class="base"></span><span class="text">Access</span></p></a>
+      </div>
+
+    </body>
+</html>
